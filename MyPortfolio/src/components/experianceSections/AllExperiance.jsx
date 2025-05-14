@@ -42,12 +42,15 @@ const experiance =[
 
 const AllExperiance = () => {
   return (
-    <div>
+    <div className='flex md:flex-row sm:flex-col items-center justify-between'>
         {
             experiance.map((item,index)=>{
-                return <>
-                <SingleExperiance key={index} experiance={experiance}></SingleExperiance>
-                {index != experiance.length }
+                return < >
+                <SingleExperiance key={index} experiance={item}></SingleExperiance>
+                {
+                    index<experiance.length-1 ? <FaArrowRight className='text-5xl text-orange lg:block sm:hidden' /> :""
+                    
+                }
                 
                 </>
             })
