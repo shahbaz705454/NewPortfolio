@@ -9,42 +9,42 @@ const projects = [
         name:"Edtech Learning Platform",
         year:"2025",
         align:"right",
-        image:"../../images/website-img-1.jpg",
+        image:"../../images/project1.png",
         link:"https://github.com/shahbaz705454/Learnify"
     },
       {
         name:"Portfolio Website",
         year:"2025",
         align:"left",
-        image:"../../images/website-img-1.jpg",
+        image:"../../images/project2.2.png",
         link:"https://github.com/shahbaz705454/NewPortfolio"
     },
       {
-        name:"Cuberto-Smart-landing-Page",
+        name:"3D Portfolio Website",
         year:"2024",
         align:"right",
-        image:"../../images/website-img-1.jpg",
+        image:"../../images/project2.png",
         link:"https://github.com/shahbaz705454/Cuberto-Smart-Landing-Page-Advance"
     },
       {
         name:"Al Image Enhancer",
         year:"2024",
         align:"left",
-        image:"../../images/website-img-1.jpg",
+        image:"../../images/project7.png",
         link:"https://github.com/shahbaz705454/AI-ImageEnhancer"
     },
       {
         name:"Password Manager",
         year:"2024",
         align:"right",
-        image:"../../images/website-img-1.jpg",
+        image:"../../images/project6.jpeg",
         link:"https://github.com/shahbaz705454/Password_Manager_MongoDb_React"
     },
       {
         name:"Employee management System",
         year:"2024",
         align:"left",
-        image:"../../images/website-img-1.jpg",
+        image:"../../images/project4.png",
         link:"https://github.com/shahbaz705454/Employee_User_ManagementSystem"
     },
 ]
