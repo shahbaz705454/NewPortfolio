@@ -12,7 +12,7 @@ const HeroPic = () => {
             whileInView='show'
             viewport={{once:false,amount:0}}
     className='h-full flex items-center justify-center'>
-        <img src='../../public/images/main.png' className='max-h-[450px]'></img>
+        <img src='../../images/main.png' className='max-h-[450px]'></img>
     <div className='absolute -z-10 flex justify-center items-center animate-pulse'>
         <PiHexagonLight className='md:h-[80%] sm:[110%] min-h-[400px] w-auto text-cyan blur-md animate-[spin_20s_linear_infinite]' /></div>
     </motion.div>
