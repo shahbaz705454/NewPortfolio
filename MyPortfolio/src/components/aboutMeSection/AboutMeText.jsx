@@ -1,8 +1,15 @@
 import React from "react";
+import {motion} from 'framer-motion';
+import {fadeIn} from "../../framerMotion/variants"
 
 const AboutMeText = () => {
   return (
-    <div className="flex flex-col md:items-start sm:items-center md:left sm:text-center">
+    <motion.div
+     variants={fadeIn('right',0.3)}
+                initial='hidden'
+                whileInView='show'
+                viewport={{once:false,amount:0}}
+    className="flex flex-col md:items-start sm:items-center md:left sm:text-center">
       <h2 className="text-6xl text-cyan mb-10">About Me</h2>
       <p className="text-white text-start">
         I'm Mohd Shahbaz a web developer with a passion for learning and coding
@@ -13,7 +20,7 @@ const AboutMeText = () => {
         collaborative teams and grow as developer.
       </p>
       <button className="border border-orange rounded-full py-2 px-4 text-lg flex mt-10 hover:bg-orange transition-all duration-110 cursor-pointer ease-in-out md:self-start sm:self-center hover:text-cyan justify-center items-center">Projects</button>
-    </div>
+    </motion.div>
   );
 };
 

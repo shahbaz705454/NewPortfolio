@@ -1,6 +1,8 @@
 import React from 'react'
 import SingleExperiance from './SingleExperiance'
 import { FaArrowRight } from "react-icons/fa";
+import {motion} from 'framer-motion';
+import {fadeIn} from "../../framerMotion/variants"
 const experiance =[
     {
         job:"Front-End Developer",
@@ -43,20 +45,23 @@ const experiance =[
 const AllExperiance = () => {
   return (
     <div className='flex md:flex-row sm:flex-col items-center justify-between'>
-        {
-            experiance.map((item,index)=>{
-                return < >
-                <SingleExperiance key={index} experiance={item}></SingleExperiance>
-                {
-                    index<experiance.length-1 ? <FaArrowRight className='text-5xl text-orange lg:block sm:hidden' /> :""
-                    
-                }
-                
-                </>
-            })
-        }
+      {experiance.map((item, index) => (
+        <React.Fragment key={index}>
+          <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0 }}
+          >
+            <SingleExperiance experiance={item} />
+          </motion.div>
+          {index < experiance.length - 1 && (
+            <FaArrowRight className='text-5xl text-orange lg:block sm:hidden' />
+          )}
+        </React.Fragment>
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default AllExperiance

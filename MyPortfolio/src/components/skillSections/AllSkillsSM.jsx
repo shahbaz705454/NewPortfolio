@@ -6,6 +6,8 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaJava } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
+import {motion} from 'framer-motion';
+import {fadeIn} from "../../framerMotion/variants"
 
 const skills = [
   {
@@ -42,10 +44,15 @@ const AllSkillsSM = () => {
   return <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
     {
         skills.map((item,index)=>{
-            return <div key={index} className="flex flex-col items-center" >
+            return <motion.div
+            variants={fadeIn('up',0.3)}
+                        initial='hidden'
+                        whileInView='show'
+                        viewport={{once:false,amount:0.7}}
+            key={index} className="flex flex-col items-center" >
                 <item.icon className="text-6xl text-orange"/>
                 <p className="text-center mt-4 text-white">{item.skills}</p>
-            </div>
+            </motion.div>
 
         })
     }

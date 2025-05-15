@@ -1,4 +1,4 @@
-const fadeIn = (direction, duration) => {
+export const fadeIn = (direction, duration, delay = 0) => {
   return {
     hidden: {
       y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
@@ -9,9 +9,9 @@ const fadeIn = (direction, duration) => {
       y: 0,
       x: 0,
       opacity: 1,
-      transiltion: {
+      transition: {
         type: "tween",
-        duration: 1.2,
+        duration: duration || 0.3,
         delay: delay,
         ease: [0.25, 0.25, 0.25, 0.27],
       },
