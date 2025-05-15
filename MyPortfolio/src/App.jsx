@@ -1,5 +1,6 @@
 import './App.css'
 import AboutMeMain from './components/aboutMeSection/AboutMeMain'
+import ContactMeMain from './components/contactMeSection/ContactMeMain'
 import ExperianceMain from './components/experianceSections/ExperianceMain'
 import HeroMain from './components/heroSection/HeroMain'
 import NavbarMain from './components/navbar/NavbarMain'
@@ -20,6 +21,7 @@ function App() {
     <SubSkills></SubSkills>
     <ExperianceMain></ExperianceMain>
     <ProjectMain></ProjectMain>
+    <ContactMeMain></ContactMeMain>
 
     
    
